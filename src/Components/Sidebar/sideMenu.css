@@ -12,36 +12,43 @@
 }
 .Sidebar_options .Sidebar_option {
     width: 100%;
-    height: 90px;
+    height: 75px;
     padding: 0;
     margin: 0;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-self: center;
     overflow: hidden;
     flex-direction: row;
     align-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     cursor: pointer;
-   transform: background;
+    transform: background;
     transition: all 0.5s ease-out;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
 }
 .Sidebar_options .Sidebar_option:hover{
     background: rgb(255, 255, 255);
     border-radius: 5px;
 }
 .Sidebar_options .Sidebar_option img {
-    height: 50px;
-    width: 50px;
-    object-fit: contain;
-    background-position: center;
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
     border-radius: 50%;
+    margin-right: 10px;
 }
-.Sidebar_options .Sidebar_option p{
+.Sidebar_options .Sidebar_option > p {
     font-size: 15px;
     font-weight: 400;
-
+    position: absolute;
+    /* right: 0px; */
+    margin-right: auto;
+    left: 10rem;
+    margin-left: 1px;
 }

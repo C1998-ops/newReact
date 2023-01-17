@@ -1,7 +1,7 @@
 import { Avatar } from "@mui/material";
 import React from "react";
 import "./QuoraBox.css";
-const QuoraBox = () => {
+const QuoraBox = (props) => {
   return (
     <div className="quoraBox">
       <div className="quoraBox__info">
@@ -11,7 +11,7 @@ const QuoraBox = () => {
           }
           className="quoraBox__infoAvatar"
         />
-        <h5>test</h5>
+        <h5>{props.input}</h5>
       </div>
     </div>
   );

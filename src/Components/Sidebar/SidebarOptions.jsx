@@ -42,7 +42,7 @@ const SidebarOptions = () => {
   return (
     <div className="Sidebar_options">
       {sideMenu.map((list, index) => (
-        <div className="Sidebar_option">
+        <div className="Sidebar_option" key={index}>
           <img src={list.img} alt="menu_images" />
           <p>{list.p}</p>
         </div>

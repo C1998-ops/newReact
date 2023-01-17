@@ -1,9 +1,17 @@
-import React from 'react'
-
+import React from "react";
+import WidgetContent from "./WidgetContent";
+import "./Widget.css";
 function SmallWidget() {
   return (
-    <div>SmallWidget</div>
-  )
+    <div className="widget">
+      <div className="widget_header">
+        <h4>Space to Follow</h4>
+      </div>
+      <div className="widget_body">
+        <WidgetContent />
+      </div>
+    </div>
+  );
 }
 
-export default SmallWidget
+export default SmallWidget;

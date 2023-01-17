@@ -1,0 +1,16 @@
+.QuoraBox{
+    display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid lightgray;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.QuoraBox:hover{
+    border: 1px solid rgb(175, 175, 175);
+}
+.QuoraBoxMainContainer{
+    display: flex;
+    align-items: center;
+}

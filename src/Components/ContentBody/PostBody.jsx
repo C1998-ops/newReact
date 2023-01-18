@@ -26,7 +26,7 @@ const customStyles = {
     transform: "translate(-50%, -50%)",
   },
 };
-const PostBody = ({imageUrl}) => {
+const PostBody = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [answer, setAnswer] = useState("");
 
@@ -103,7 +103,7 @@ const PostBody = ({imageUrl}) => {
                 asked by <span className="name">users.displayName</span> {""}
                 on <span className="name"></span>
               </p>
-              <Timestamp  date={new Date().getDate().toLocaleString()}  /> 
+              <Timestamp relative   date={new Date().getDate().toLocaleString()}  /> 
               
             </div>
             <div className="modal__answer">
@@ -125,7 +125,7 @@ const PostBody = ({imageUrl}) => {
           </Modal>
         </div>
         <div className="post__answer"></div>
-        <img src={answer} alt="" />
+        <img src="" alt="" />
       </div>
       <div className="post__footer">
         <div className="post__footerAction">
